@@ -1,0 +1,402 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  cursor: pointer;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.highlight {
+  color: #0027D5;
+}
+
+.title-primary {
+  color: #0027D5;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.tag a {
+  color: #0027D5;
+  font-size: 24px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.btn {
+  margin-top: 16px;
+}
+.btn a {
+  border: 1px solid #000;
+  border-radius: 40px;
+  padding: 8px 16px;
+  color: #4B4B4B;
+}
+
+.btn-highlight {
+  color: #fff;
+  background: #0027D5;
+  padding: 6px 12px;
+  border-radius: 40px;
+  margin-left: 8px;
+}
+
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  padding: 24px 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 312px;
+  font-size: 32px;
+}
+.footer .contact .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+}
+.footer .contact .sns li img {
+  width: 44px;
+  height: 44px;
+}
+.footer .copyright {
+  text-align: center;
+  padding: 24px 0;
+}
+
+@media (max-width: 650px) {
+  .footer .contact {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .footer .contact {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 80px 0;
+  }
+}
+.blog-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blog-cover img {
+  width: 50%;
+}
+.blog-cover .cover-text {
+  width: 50%;
+  color: #0027D5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 80px;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true);
+  background-position: center;
+}
+.blog-cover .cover-text h1 {
+  font-size: 120px;
+  font-weight: 900;
+}
+.blog-cover .cover-text h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .blog-cover {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-cover img {
+    width: 100%;
+  }
+  .blog-cover .cover-text {
+    width: 100%;
+    padding: 24px;
+  }
+  .blog-cover .cover-text h1 {
+    font-size: 52px;
+  }
+}
+.blog-newest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blog-newest img {
+  width: 50%;
+}
+.blog-newest .newest-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 24px;
+  max-width: 636px;
+}
+.blog-newest .tag {
+  margin: 4px 0 8px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blog-newest .content {
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  .blog-newest {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-newest img {
+    width: 100%;
+  }
+  .blog-newest .newest-content {
+    padding: 48px 12px;
+  }
+}
+.content {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  color: #4B4B4B;
+}
+
+.oneline {
+  -webkit-line-clamp: 1;
+}
+
+.search-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  margin-top: -96px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #000;
+  border-radius: 40px;
+  width: 416px;
+  padding: 16px;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .search-btn {
+    width: 95%;
+  }
+}
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1296px;
+  margin: 176px auto 0 auto;
+}
+.main-container .blog-content {
+  width: 416px;
+  margin-bottom: 80px;
+}
+.main-container .blog-content img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.main-container .blog-content:nth-child(5) .tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    margin-top: 160px;
+  }
+  .main-container .blog-content {
+    width: 100%;
+    margin: 0 12px;
+  }
+  .main-container .blog-content .btn {
+    margin-bottom: 32px;
+  }
+}
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  background: #fff;
+  padding: 8px 20px;
+  border-radius: 9999px;
+}
+
+.pagination .page:hover, .arrow:hover {
+  background-color: #d6e6ff;
+  color: #1a5ddc;
+  cursor: pointer;
+}
+.pagination .page:active, .arrow:active {
+  background-color: #d6e6ff;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.pagination .page, .arrow, .dots {
+  padding: 4px 8px;
+  color: #444;
+  border-radius: 6px;
+}
+
+.pagination .page.active {
+  color: #0027D5;
+  font-weight: bold;
+}
+
+.pagination .dots {
+  cursor: default;
+  color: #888;
+}
