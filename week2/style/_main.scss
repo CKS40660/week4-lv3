@@ -1,0 +1,63 @@
+.container{
+    width: 1296px;
+    margin: 0 auto;
+    padding: $space-xl 0;
+    .title{
+        font-size: 28px;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+}
+
+.content{
+    display: flex;
+    .productList{
+        width: 172px;
+        padding-right: $space-l;
+        ul li{
+            margin-bottom: 16px;
+            :hover{
+                color:#6C757D;
+            }
+        }
+    }
+    .productGroup{
+        width: 1076px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        .productCard{
+            width: 31.8%;
+            margin-bottom: 48px;
+            .cardImg{
+                margin-bottom: 12px;
+            }
+            .productName{
+                line-height: 1.2;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.pagination{
+    .page-function{
+        display: flex;
+        justify-content: center;
+        column-gap: 8px;
+        li{
+            width: 40px;
+            height: 40px;
+        }
+        a{
+            color:#212529;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: center;
+            &:hover{
+                color:#495057;
+            }
+        }
+    }
+}
