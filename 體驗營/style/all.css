@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -142,48 +141,162 @@ h2 {
     display: none;
   }
 }
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 375px;
-}
-.container .page1 .header {
+.cover {
+  max-width: 1920px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 28px;
-  font-weight: 700;
-  -webkit-column-gap: 40px;
-     -moz-column-gap: 40px;
-          column-gap: 40px;
-  padding: 24px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
 }
-.container .page1 .cover-inf {
+.cover .cover-img {
+  width: 50%;
+  max-height: 640px;
+}
+.cover .newest .tag {
   color: #0027D5;
-  background-image: url(/最終作業/素材/Hero\ Section-1.png);
-  padding: 24px;
-  font-size: 52px;
-  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  margin: 4px 0 8px 0;
 }
-.container .page1 .cover-inf .cover-position {
+.cover .newest .tag a {
+  font-size: 24px;
+  color: #0027D5;
+}
+.cover .newest .tag .btn {
+  background-color: #0027D5;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 40px;
+}
+.cover .newest .title {
   font-size: 28px;
   font-weight: 700;
-}
-.container .page1 .content {
-  padding: 40px 24px;
-  font-size: 24px;
+  color: #000;
 }
 
-@media (min-width: 1920px) {
-  .container {
-    width: 1920px;
+@media (max-width: 600px) {
+  .cover {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .container .cover {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .cover .cover-img {
+    width: 100%;
   }
+  .newest {
+    padding: 48px 12px;
+  }
+}
+.page2 {
+  max-width: 636px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+@media (max-width: 600px) {
+  .page2 {
+    max-width: 351px;
+    padding: 64px 12px;
+  }
+}
+.title, .project-title {
+  color: #0027D5;
+  margin-bottom: 24px;
+}
+
+.project img {
+  margin: 48px 0 24px 0;
+}
+.project:last-child {
+  margin-top: 48px;
+}
+
+.tip {
+  background-color: #EDEDED;
+  padding: 24px;
+  border-radius: 24px;
+  margin: 24px 0;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin: 24px 0 12px 0;
+}
+
+.recommend {
+  list-style: number;
+  list-style-position: inside;
+  margin: 8px 0 24px 0;
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 48px;
+}
+.btn-container .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #000;
+  border-radius: 40px;
+  padding: 8px 16px;
+}.subitem {
+  margin-bottom: 24px;
+}
+.chapter .subitem li {
+  list-style: disc;
+  list-style-position: inside;
+}
+.chapter .subitem .recommend {
+  margin-top: 8px;
+}
+.chapter .subitem .numberList li {
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 48px;
+}
+.btn-container .btn {
+  padding: 8px 16px;
+  border: 1px solid #000;
+  border-radius: 40px;
+}
+
+.tip {
+  background: #EDEDED;
+  font-weight: 700;
+  padding: 24px;
+  border-radius: 24px;
+  margin-top: 24px;
+}
+.tip:last-child {
+  margin-bottom: 24px;
+}
+
+.tip-last {
+  margin-bottom: 24px;
 }
