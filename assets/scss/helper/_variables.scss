@@ -12,7 +12,7 @@
 
 // 格線系統的loop
 @for $i from 1 through 12 {
-    .cal-#{$i} {
+    .col-#{$i} {
         width: calc(100% / 12 * #{$i});
         // gutter寬度
         padding: 0 12px;
@@ -21,7 +21,7 @@
 // 重新定義i，符合4格線
 @include mobile {
     @for $i from 1 through 4 {
-        .m-cal-#{$i} {
+        .m-col-#{$i} {
         width: calc(100% / 4 * #{$i});
         padding: 0 6px;
         }

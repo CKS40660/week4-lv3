@@ -29,10 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1.5;
-    letter-spacing: 0.05em;
-    font-family: "Noto Sans TC", sans-serif;
-	color:$neutral-900
+	line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -50,17 +47,26 @@ table {
 	border-spacing: 0;
 }
 
-*,*::after,*::before{
-    box-sizing: border-box;
+// 自定義reset
+
+body{
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+	font-family: "Noto Sans TC", sans-serif;
+	color: $neutral-900;
 }
 
 img{
-    width: 100%;
-    display: block;
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
 
 a{
-    text-decoration: none;
-	color:$neutral-900
+	text-decoration: none;
+	color: $neutral-900;
 }
 
+*, *::after, *::before {
+	box-sizing: border-box;
+}
