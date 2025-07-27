@@ -1,0 +1,58 @@
+body{
+    font-family: 'Noto Sans TC';
+    letter-spacing: 5;
+}
+// gap
+$space-s:12px;
+$space-m:16px;
+$space-l:24px;
+$space-xl:32px;
+$space-5xl:64px;
+
+$radius-xs:4px;
+// color
+$primary:#57A203;
+
+.highlight{
+    color:$primary;
+}
+
+.btn{
+    border-radius: $radius-xs;
+    padding:$space-s $space-l ;
+    cursor: pointer;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    &:hover{
+        border:1px solid #000;
+    }
+}
+
+.breadCrumb{
+    margin-bottom: 24px;
+    ul{
+        display: flex;
+        li+li ::before{
+            content: "/";
+            margin: 0 12px;
+        }
+    }
+}
+
+.priceGroup{
+    display: flex;
+    column-gap: 8px;
+    margin-bottom: 16px;
+    .discount{
+        color:#57A203;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.12;
+    }
+    .original{
+        color:#ADB5BD;
+        text-decoration:line-through;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

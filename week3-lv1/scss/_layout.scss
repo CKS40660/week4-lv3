@@ -1,0 +1,24 @@
+.outer{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+header,footer{
+    margin: 0 -12px;
+        a:hover{
+        font-weight: 600;
+    }
+}
+
+@include mobile{
+    .headerNav{
+            display: none;
+    }
+}
+
+.navContainer,.footerNav{
+    @include mobile{
+        display: block;
+    }
+}
