@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  <script type="module" crossorigin src="/week4-lv3/assets/main-CGlvV5eM.js"></script>
-  <link rel="stylesheet" crossorigin href="/week4-lv3/assets/main-CzQU134u.css">
+  <script type="module" crossorigin src="/week4-lv3/assets/main-oGQpSGP0.js"></script>
+  <link rel="stylesheet" crossorigin href="/week4-lv3/assets/main-reSlNxxc.css">
 </head>
 <body>
     <header class="container">
-    <div class="header d-flex aic py-16 m-py-8 col-12">
-        <div class="logo mr-48" style=width:129px>
-            <a href="/week4-lv3/index.html">
-                <img src="/week4-lv3/assets/logo-5fmWFTFl.svg" alt="logo">
-            </a>
+    <div class="row">
+        <div class="header d-flex aic py-16 m-py-8 col-12">
+            <h1 class="logo mr-48">
+                <a href="./index.html">
+                    URBNSTEP
+                </a>
+            </h1>
+            <ul class="d-flex d-none">
+                <li class="mr-40 py-12"><a href="./productList.html">商品列表</a></li>
+                <li class="py-12" ><a href="./introduce.html">品牌故事</a></li>
+            </ul>
+            <div class="ml-auto"><a href="./login.html"><i class="bi bi-person p-12"></i></a></div>
         </div>
-        <ul class="d-flex d-none">
-            <li class="mr-40 py-12"><a href="/week4-lv3/productList.html">商品列表</a></li>
-            <li class="py-12" ><a href="/week4-lv3/introduce.html">品牌故事</a></li>
-        </ul>
-        <div class="ml-auto"><a href="/week4-lv3/login.html"><i class="bi bi-person p-12"></i></a></div>
     </div>
 </header>
-    <div class="container d-flex d-block">
-        <div class="info mx-auto py-64 row d-flex d-block">
+    <div class="container d-flex d-sm-block">
+        <div class="info mx-auto py-64 row d-flex d-sm-block jcc">
             <ul class="imgGallery col-7 d-flex m-col-4">
                 <li><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image.png?raw=true" alt="gallery1"></li>
                 <li><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-1.png?raw=true" alt="gallery2"></li>
@@ -35,18 +37,18 @@
                 <li><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-7.png?raw=true" alt="gallery8"></li>
             </ul>
             <div class="productInfo col-5 m-col-4">
-                <div class="breadcrumb mb-12 m-mb-8">
-                    <ul class="breadcrumbList d-flex fw-5 m-fz-sm">
+                <div class="breadcrumb mb-12 m-mb-8 text-none">
+                    <ul class="breadcrumbList d-flex fw-5 m-fz-sm break-word">
                         <li><a href="#">首頁</a></li>
                         <li><a href="#">女鞋</a></li>
                         <li><a href="#">滑板鞋</a></li>
                         <li><a href="#">Platform 404</a></li>
                     </ul>
                 </div>
-                <h1 class="h2 mb-16 m-h4 m-mb-12">Platform 404</h1>
+                <h2 class="h2 mb-16 m-h4 m-mb-12">Platform 404</h2>
                 <div class="priceGroup d-flex mb-16 m-mb-12">
-                    <div class="discount h5 fw-7 text-highlight mr-8 m-h6 ">NT$2,600</div>
-                    <div class="original fz-sm">NT$3,200</div>
+                    <p class="discount h5 fw-7 text-highlight mr-8 m-h6 ">NT$2,600</p>
+                    <p class="original fz-sm text-none">NT$3,200</p>
                 </div>
                 <div class="introduceText mb-32">
                     <p class="mb-12">Platform 404 以柔和奶白為底，搭配深藍色皮革點綴，走在街上自帶回頭率。鞋型採用復古運動風輪廓，結合輕量厚底與柔軟泡棉鞋舌，兼顧美感與舒適。</p>
@@ -82,38 +84,58 @@
                 </div>
                 <div class="favorate d-flex tac mb-32">
                     <div class="add mr-8">
-                        <p class="btn"><i class="bi bi-heart"></i> 加入收藏</p>
+                        <a href="#" class="btn"><i class="bi bi-heart"></i> 加入收藏</a>
                     </div>
                     <div class="appointment">
-                        <p class="btn btn-black"><i class="bi bi-handbag"></i> 門市預約試穿</p>
+                        <a href="#" class="btn btn-black"><i class="bi bi-handbag"></i> 門市預約試穿</a>
                     </div>
                 </div>
                 <div class="notice m-mb-40">
                     <ul class="noticeContainer">
                         <li class="deco mb-12">
                             <div class="noticeTitle mb-4">商品材質</div>
-                            <div class="noticeContent mb-12">
-                                鞋面：合成皮革（Synthetic Leather） <br>
-                                內裡：透氣網布材質，提升舒適與排汗性 <br>
-                                鞋底：EVA 輕量發泡橡膠，具備良好緩震與止滑效果 <br>
-                                鞋帶：聚酯纖維，耐拉扯不易鬆脫
-                            </div>
+                            <ul class="noticeContent mb-12">
+                                <li>
+                                    <p>鞋面：合成皮革（Synthetic Leather） </p>
+                                </li>
+                                <li>
+                                    <p>內裡：透氣網布材質，提升舒適與排汗性</p>
+                                </li>
+                                <li>
+                                    <p>鞋底：EVA 輕量發泡橡膠，具備良好緩震與止滑效果</p>
+                                </li>
+                                <li>
+                                    <p>鞋帶：聚酯纖維，耐拉扯不易鬆脫</p>
+                                </li>
+                            </ul>
                         </li>
                         <li class="deco mb-12">
                             <div class="noticeTitle mb-4">購買須知</div>
-                            <div class="noticeContent mb-12">
-                                商品顏色因螢幕顯示可能略有差異，請以實品為準。 <br>
-                                建議首次穿著前試穿確認尺寸，避免影響退換貨權益。 <br>
-                                本商品為限量發售，庫存有限，如需更換尺寸請儘早聯繫客服協助處理。 
-                            </div>
+                            <ul class="noticeContent mb-12">
+                                <li>
+                                    <p>商品顏色因螢幕顯示可能略有差異，請以實品為準。</p>
+                                </li>
+                                <li>
+                                    <p>建議首次穿著前試穿確認尺寸，避免影響退換貨權益。</p>
+                                </li>
+                                <li>
+                                    <p>本商品為限量發售，庫存有限，如需更換尺寸請儘早聯繫客服協助處理。</p>
+                                </li>
+                            </ul>
                         </li>
                         <li class="deco mb-12">
                             <div class="noticeTitle mb-4">保養方式</div>
-                            <div class="noticeContent mb-12">
-                                建議以乾布或微濕軟布擦拭表面汙漬，避免機洗或長時間浸水。 <br>
-                                納時請放置於乾燥通風處，避免日曬及高溫導致變形或龜裂。 <br>
-                                若需深層清潔，建議使用中性清潔劑並搭配柔刷輕刷，勿使用漂白水或強酸強鹼清潔劑。
-                            </div>
+                            <ul class="noticeContent mb-12">
+                                <li>
+                                    <p>建議以乾布或微濕軟布擦拭表面汙漬，避免機洗或長時間浸水。</p>
+                                </li>
+                                <li>
+                                    <p>納時請放置於乾燥通風處，避免日曬及高溫導致變形或龜裂。 </p>
+                                </li>
+                                <li>
+                                    <p>若需深層清潔，建議使用中性清潔劑並搭配柔刷輕刷，勿使用漂白水或強酸強鹼清潔劑。</p>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -122,7 +144,7 @@
     </div>
     <div class="container">
         <div class="moreProduct row py-48 ">
-            <p class="col-12 h4 fw-7 mb-16">你可能也喜歡...</p>
+            <h3 class="col-12 h4 fw-7 mb-16">你可能也喜歡...</h3>
             <ul class="d-flex">
                 <li class="card col-3">
                     <img class="mb-12" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product.png?raw=true" alt="product1">
@@ -147,29 +169,33 @@
             </ul>
         </div>
     </div>
-    <aside class="aside py-24 mb-64 mt-40 m-px-12 m-mb-32 m-mt-32">
+    <section class="aside py-24 mb-64 mt-40 m-px-12 m-mb-32 m-mt-32">
     <div class="promote d-flex aic jcc ">
         <p class="h4 fw-7 mr-24 m-h5">加入會員取得 9 折優惠</p>
-        <div class="btn-black btn py-12 px-24 m-py-8 m-px-16"><a href="/week4-lv3/pages/login.html">馬上註冊</a></div>
+        <div class="btn-black btn py-12 px-24 m-py-8 m-px-16"><a href="./login.html">馬上註冊</a></div>
     </div>
-</aside>
+</section> 
 <footer class="footer">
-    <div class="nav container d-flex aic deco d-block">
-        <div class="logo mr-48 m-mb-8"  style=width:129px>
-            <a href="/week4-lv3/index.html">
-                <img src="/week4-lv3/assets/logo-5fmWFTFl.svg" alt="logo">
-            </a>
+    <div class="container">        
+        <div class="row">        
+            <div class="nav col-12 d-flex aic deco d-block">
+                <h2 class="logo mr-48 m-mb-8">
+                    <a href="./index.html">
+                        URBNSTEP
+                    </a>
+                </h2>
+                <ul class="d-flex ml-auto d-block m-px-12 ">
+                    <li class="mr-40 py-12"><a href="./productList.html">商品列表</a></li>
+                    <li class="py-12 mb-24" ><a href="./introduce.html">品牌故事</a></li>
+                </ul>
+            </div>
+            <div class="copyright col-12 pb-64 pt-32 m-pb-32" >
+                <p class="tac fz-sm fw-4">
+                    Copyright ©2025 URBNSTYLE <br>
+                    All Rights Reserved.
+                </p>
+            </div>
         </div>
-        <ul class="d-flex ml-auto d-block m-px-12 ">
-            <li class="mr-40 py-12"><a href="/week4-lv3/productList.html">商品列表</a></li>
-            <li class="py-12 mb-24" ><a href="/week4-lv3/introduce.html">品牌故事</a></li>
-        </ul>
-    </div>
-    <div class="copyright pb-64 pt-32 m-pb-32" >
-        <p class="tac fz-sm fw-4">
-            Copyright ©2025 URBNSTYLE <br>
-            All Rights Reserved.
-        </p>
     </div>
 </footer>    
 </body>
