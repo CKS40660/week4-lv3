@@ -8,7 +8,9 @@
     margin: 0 -12px;
 }
 .m-row{
-    margin: 0 -6px;
+    @include mobile{
+        margin: 0 -6px;
+    }
 }
 .t-row{
     margin: 0 -4px;
@@ -27,23 +29,15 @@
     a{color: #fff;}
 }
 
-.breadcrumbList{
-    li,a{
-        color:$neutral-600;
-    }
-    li::after{
-        content: "/";
-        margin: 0 12px;
-        @include mobile{
-            font-size: 14px;
-        }
-    }
-    li:last-child{
-        a{
-            color:$neutral-900;
-        }
-        &::after{
-            content: "";
-        }
+
+.break-word {
+    word-break: break-word;   
+    overflow-wrap: break-word; 
+    word-wrap: break-word;    
+}
+
+.text-none{
+    @media (max-width:250px) {
+        display: none;
     }
 }

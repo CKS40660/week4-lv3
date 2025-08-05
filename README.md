@@ -46,3 +46,16 @@ git push -u origin main // 僅限第一次輸入，往後只需要輸入 git pus
 ```
 
 3. 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署
+
+<!-- 當檔案更新 -->
+## 提交開發環境(master、main)
+```cmd
+git add .
+git commit -m 'update' 
+<!-- 可以更改字串 -->
+git push -u origin main
+```
+## 部署gh-pages
+```cmd
+npm run deploy
+```

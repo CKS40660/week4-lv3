@@ -26,7 +26,7 @@
 }
 
 .history{
-    ul{
+    ol{
         list-style: disc;
     }
     time{
@@ -42,9 +42,13 @@
 .story{
     li{
         color:$primary-400;
-        span{
+        a{
             text-decoration: underline;
             text-underline-offset: 4px;
+            color:$primary-400;
+            &:hover{
+                font-weight: 600;
+            }
         }
     }
 }

@@ -1,0 +1,29 @@
+.breadcrumbList{
+    li,a{
+        color:$neutral-600;
+        @include pad{
+            display: none;
+        }
+        @include mobile{
+            display: inline-block;
+        }
+    }
+    li::after{
+        content: "/";
+        margin: 0 12px;
+        @media (max-width:330px) {
+            margin: 0 6px;
+        }
+    }
+    li:last-child{
+        a{
+            color:$neutral-900;
+        }
+        &::after{
+            content: "";
+        }
+    }
+    @media (max-width:250px) {
+        display: none;
+    }
+}

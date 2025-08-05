@@ -46,6 +46,11 @@
             padding: 12px 24px;
             border: 1px solid $neutral-300;
             margin: 0 8px 8px 0;
+            @media (max-width:250px) {
+                width: 95%;
+                margin-right: 0;
+                padding: 6px;
+            }
             &:hover{
                 border-color: $neutral-900;
             }
@@ -63,16 +68,24 @@
 }
 
 .favorate{
+    @media (max-width:250px) {
+        flex-direction: column; 
+    }
     .add,.appointment{
         width: 50%;
-        p{
+        a{  
+            display: block;
             padding: 12px 24px;
+            &:hover{
+                background-color: #495057;  
+            }
         }
     }
-    .add p{
+    .add a{
         border:1px solid $neutral-900;
         &:hover{
-            border-width: 2px;
+            background-color: #212529;
+            color: #fff;
         }
     }
 }

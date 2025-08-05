@@ -2,10 +2,6 @@
     padding-top: 64px;
     padding-bottom: 64px;
     margin-bottom: 64px;
-    @include mobile{
-        padding: 0;
-        margin-bottom: 32px;
-    }
 }
 
 .loginImg{
@@ -35,6 +31,9 @@
         &:hover{
             border-color: $neutral-900;
             color:$neutral-900;
+        }
+        &:active{
+            background-color: $neutral-300;
         }
     }
     .sns li{

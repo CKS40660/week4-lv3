@@ -3,3 +3,17 @@
     font-weight: 600;
   }
 }
+
+.header .logo{
+    @media (max-width:300px) {
+    display: none;
+  }
+  a{
+    background-image: url(/assets/images/logo.svg);
+    background-position: center;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+  }
+}

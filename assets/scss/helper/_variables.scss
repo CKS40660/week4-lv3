@@ -1,11 +1,11 @@
 @mixin pad{
-    @media (max-width:768px) {
+    @media (max-width:992px) {
         @content;
     }
 }
 
 @mixin mobile{
-    @media (max-width:568px) {
+    @media (max-width: 576px) {
         @content;
     }
 }
@@ -164,7 +164,7 @@ $primary-400: #57A203;
 $primary-500: #477A11;
 
 /* Neutral */
-$neutral-0:   #FFFFFF;
+$neutral-white:   #FFFFFF;
 $neutral-100: #F8F9FA;
 $neutral-200: #E9ECEF;
 $neutral-300: #DEE2E6;

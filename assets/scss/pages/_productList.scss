@@ -12,6 +12,22 @@
             width: 50%;
             padding: 0 6px;
         }
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+}
+
+.productList{
+    ul>li{
+        &:hover{
+            opacity: 0.6;
+        }
+        &:active{
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            opacity: 0.6;
+        }
     }
 }
 
@@ -20,6 +36,9 @@
         width: 40px;
         padding: 8px 0;
         &:hover{
+            background-color: $neutral-100;
+        }
+        &:active{
             background-color: $primary-300;
         }
     }

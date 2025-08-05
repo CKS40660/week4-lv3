@@ -1,16 +1,15 @@
 .d-flex{
     display: flex;
 }
-.d-none{
+.d-sm-none{
     @include mobile{
         display: none;
     }
 }
 
-.d-block{
+.d-sm-block{
     @include mobile{
         display: block;
-        justify-content: start;
     }
 }
 
@@ -19,6 +18,9 @@
 }
 .jcc{
     justify-content: center;
+}
+.flex-col{
+    flex-direction: column;
 }
 
 .tac{

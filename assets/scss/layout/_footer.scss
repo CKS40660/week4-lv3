@@ -15,3 +15,17 @@
 .copyright p{
   color:$neutral-600;
 }
+
+.footer .logo{
+    @media (max-width:300px) {
+    display: none;
+  }
+  a{
+    background-image: url(/assets/images/logo.svg);
+    background-position: center;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+} 

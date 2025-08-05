@@ -8,6 +8,9 @@
   }
   .coverText{
     padding: 289px 0 288px 200px;
+    @media (max-width:250px) {
+      padding: 100px 0;
+    }
     color:#fff;
     @include mobile{
       padding: 155px 24px;
@@ -21,12 +24,22 @@
   background: $primary-300;
   padding: 12px 24px;
   color:$neutral-900;
+  border:1px solid transparent;
+  &:hover{
+    opacity: 0.9;
+  }
 }
 
 
 .newArrival{
   flex-wrap: wrap;
   margin-bottom: 64px;
+}
+
+.card>a{
+  &:hover{
+    opacity: 0.6;
+  }
 }
 
 .bestSeller{
@@ -69,10 +82,13 @@
   }
   .bannerContainer{
     padding: 100px;
+    @media (max-width:250px) {
+      padding: 100px 0;
+    }
   }
 }
 
-.textbox{
+.saleBannerText{
   position: relative;
   display: inline-block;
   margin: 0 auto;
@@ -87,11 +103,21 @@
   position: absolute;
   left:-32px;
   top:-32px;
+  @media (max-width:250px) {
+    img{
+      display: none;
+    }
+  }
 }
 .decoSparkle{
   position: absolute;
   right: -40px;
   bottom: -64px;
+  @media (max-width:250px) {
+    img{
+      display: none;
+    }
+  }
 } 
 .saleContent{
   color:$neutral-500;
@@ -101,6 +127,16 @@
   flex-wrap: wrap;
   .position-P{
     position: relative;
+    &:hover{
+      p:first-child{
+        color:$primary-300;
+      }
+      @media (max-width:250px) {
+        p{
+          color:$primary-300;
+        }  
+      }
+    }
   }
   .tagSeries{
     color:#fff;
@@ -136,3 +172,8 @@
   }
 }
 
+.text-none{
+  @media (max-width:300px) {
+    display: none;;
+  }
+}
