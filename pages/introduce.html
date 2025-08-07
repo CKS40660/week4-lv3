@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -25,10 +26,10 @@
               <p class="fw-4">融合城市結構與機能語彙，我們打造適合都會節奏的風格鞋款，陪你自信穿梭每一場風景。</p>
             </div>
           </div>
-          <div class="cover">
+          <div class="cover" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/about.png?raw=true" alt="coverImg">
           </div>
-          <section class="mb-48 m-mb-32">
+          <section class="mb-48 m-mb-32" data-aos="fade-right">
             <div class="introduce deco">
               <h2 class="h4 fw-7 mb-24 m-h5 m-mb-16">品牌簡介</h2>
               <h3 class="h5 fw-7 text-highlight mb-16 m-h6 m-mb-12 break-word ">URBNSTEP 是來自台灣的街頭機能鞋品牌，致力於打造「風格與功能並存」的鞋履體驗。</h3>
@@ -40,7 +41,7 @@
               </p>
             </div>
           </section>
-          <section class="mb-48 m-mb-32">
+          <section class="mb-48 m-mb-32" data-aos="fade-left">
             <div class="history deco">
               <h2 class="h4 fw-7 mb-24 m-h5 m-mb-16">品牌歷程</h2>
               <ol>
@@ -50,7 +51,7 @@
               </ol>
             </div>
           </section>
-          <section class="mb-48 m-mb-32">
+          <section class="mb-48 m-mb-32" data-aos="fade-right">
             <div class="concept deco">
               <h2 class="h4 fw-7 mb-24 m-h5 m-mb-16">品牌理念</h2>
               <ul>
@@ -60,7 +61,7 @@
               </ul>
             </div>
           </section>
-          <section class="mb-48 m-mb-32">
+          <section class="mb-48 m-mb-32" data-aos="fade-left">
             <div class="story deco">
               <h2 class="h4 fw-7 mb-24 m-h5 m-mb-16">品牌小故事</h2>
               <ul>
@@ -76,5 +77,9 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
