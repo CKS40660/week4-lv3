@@ -101,6 +101,7 @@
 
 .moreProduct{
     .card{
+        max-width: 320px;
         &:hover{
             border: 1px solid $neutral-900;
         }

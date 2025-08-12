@@ -33,13 +33,19 @@
 
 .pagination{
     li{
-        width: 40px;
-        padding: 8px 0;
-        &:hover{
+        a{
+            display: block;
+            padding: 8px 0;
+            width: 40px;
+            &:hover{
             background-color: $neutral-100;
-        }
-        &:active{
-            background-color: $primary-300;
+            }
+            &:active{
+                background-color: $primary-300;
+            }
+            &:focus{
+                background-color: $primary-300;
+            }
         }
     }
 }

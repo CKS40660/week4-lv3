@@ -157,17 +157,22 @@
 .styleContainer{
     @include mobile{
     overflow-x: scroll;
-    .cal-6,.cal-4,.cal-12{
-      width: unset;
+    .col-6,.col-4,.col-12{
       padding: 0;
+      width: unset;
+    }
+    .section1,.section3{
+      display: flex;
+    }
+    .row{
+      padding:0 16px;
     }
     img{
       width: 300px;
       height: 300px;
+      max-width: unset;
+      padding: 0;
       margin-right: 16px;
-    }
-    .section1,.section3{
-      display: flex;
     }
   }
 }
