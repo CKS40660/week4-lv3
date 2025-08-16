@@ -18,13 +18,6 @@
     }
 }
 
-.cover{
-    margin: 0 -110px 24px;
-    @include mobile{
-        margin: 0 0 16px;
-    }
-}
-
 .history{
     ol{
         list-style: disc;

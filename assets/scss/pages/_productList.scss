@@ -38,13 +38,15 @@
             padding: 8px 0;
             width: 40px;
             &:hover{
-            background-color: $neutral-100;
+                background-color: $primary-300;
             }
             &:active{
                 background-color: $primary-300;
+                font-weight: 600;
             }
             &:focus{
                 background-color: $primary-300;
+                box-shadow: 0 0 0 3px rgba(192, 250, 115, 0.4);
             }
         }
     }
